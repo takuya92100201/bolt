@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   background-color: #fff;
   position: fixed;
@@ -181,9 +185,12 @@ body {
   text-align: center;
 }
 
+.nav a {
+  color: #74cfae;
+}
+
 .nav_icon {
   display: inline-block;
-  color: #74cfae;
   width: 185px;
   text-align: center;
   cursor: pointer;
