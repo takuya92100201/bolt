@@ -16,6 +16,10 @@ header {
   width: 100%;
 }
 
+main {
+  padding-top: 70px;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
@@ -28,7 +32,7 @@ header {
 }
 
 .header-inner {
-  padding: 15px 0 15px 0;
+  padding: 15px 0;
 }
 
 .header_logo {
@@ -45,10 +49,10 @@ header {
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
+  transition: 0.3s;
 }
 
 .header_btn:hover {
-  transition: .3s;
   color: #333;
 }
 
@@ -58,7 +62,7 @@ header {
 }
 
 .theme-inner {
-  padding: 250px 0 250px 0;
+  padding: 250px 0;
 }
 
 .theme_title {
@@ -115,30 +119,33 @@ header {
   margin-bottom: 40px;
 }
 
+.article_content {
+  margin-bottom: 90px;
+}
 
 .article_content a {
   display: block;
   margin-left: 100px;
+  margin-top: 80px;
   float: left;
+  opacity: 0.7;
+  transition: 0.3s;
 }
 
 .article_content a:nth-child(3n-2) {
   margin-left: 0;
 }
 
-.article_content_img {
-  margin-bottom: 80px;
-  opacity: 0.7;
-  display: inline-block;
-  transition: 0.3s;
+.article_content a:nth-child(-n+3) {
+  margin-top: 0;
 }
 
-.article_content_img:hover {
+.article_content a:hover {
   opacity: 1;
 }
 
-.article_content_img:nth-child(n+4) {
-  margin-bottom: 90px;
+.article_content_img {
+  display: inline-block;
 }
 
 .article_paragraph {
@@ -159,10 +166,10 @@ header {
   font-size: 12px;
   padding: 14px 20px;
   display: inline-block;
+  transition: .3s;
 }
 
 .article_paragraph_btn:hover {
-  transition: .3s;
   color: #333;
 }
 
@@ -212,19 +219,17 @@ header {
   color: #74cfae;
   display: block;
   padding: 40px 0;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 185px;
 }
 
 .nav_icon {
   display: inline-block;
-  width: 185px;
-  text-align: center;
-  cursor: pointer;
-  transition: 0.3s;
 }
 
-.nav_icon:hover {
+.nav a:hover {
   background-color: #fff;
-  height: 112px;
 }
 
 .footer {
