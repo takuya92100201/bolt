@@ -2,28 +2,29 @@ body {
   font-family: Lato;
 }
 
+a {
+  text-decoration: none;
+}
+
 .clearfix:after {
   display: block;
   content: "";
   clear: both;
 }
 
-.header, .theme, .section_what_we_can_do, .article, .section_our_skill, .nav, .footer {
+header {
   width: 100%;
 }
 
 .inner {
-  width: 1170px;
+  width: 1100px;
   margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
 }
 
 .header {
   background-color: #fff;
   position: fixed;
+  z-index: 1;
 }
 
 .header-inner {
@@ -53,8 +54,11 @@ a {
 
 .theme {
   background-color: #f2f2f2;
-  padding: 250px 0 250px 0;
   text-align: center;
+}
+
+.theme-inner {
+  padding: 250px 0 250px 0;
 }
 
 .theme_title {
@@ -93,10 +97,14 @@ a {
 
 .section_paragraph_text {
   font-size: 20px;
+  width: 650px;
 }
 
 .article {
   background-color: #f2f2f2;
+}
+
+.article-inner {
   padding: 90px 0 70px 0;
 }
 
@@ -107,19 +115,26 @@ a {
   margin-bottom: 40px;
 }
 
-.article_content_img {
+
+.article_content a {
+  display: block;
   margin-left: 100px;
+  float: left;
+}
+
+.article_content a:nth-child(3n-2) {
+  margin-left: 0;
+}
+
+.article_content_img {
   margin-bottom: 80px;
   opacity: 0.7;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .article_content_img:hover {
   opacity: 1;
-  transition: .3s
-}
-
-.article_content_img:nth-child(3n-2) {
-  margin-left: 0;
 }
 
 .article_content_img:nth-child(n+4) {
@@ -135,6 +150,7 @@ a {
   color: #c0c0c0;
   display: inline-block;
   vertical-align: middle;
+  width: 460px;
 }
 
 .article_paragraph_btn {
@@ -152,14 +168,18 @@ a {
 
 .section_our_skill {
   background-color: #4e4e4e;
-  padding-bottom: 100px;
   color: #fff;
 }
 
+.section_our_skill-inner {
+  padding: 70px 0 100px 0;
+}
+
 .section_title {
-  padding: 70px 0;
   text-align: center;
   font-size: 24px;
+  margin-bottom: 70px;
+  font-family: Raleway;
 }
 
 .section_wrapper {
@@ -181,12 +201,17 @@ a {
 
 .nav {
   background-color: #f2f2f2;
-  padding: 200px 0 200px 0;
   text-align: center;
+}
+
+.nav-inner {
+  padding: 200px 0 200px 0;
 }
 
 .nav a {
   color: #74cfae;
+  display: block;
+  padding: 40px 0;
 }
 
 .nav_icon {
@@ -194,13 +219,12 @@ a {
   width: 185px;
   text-align: center;
   cursor: pointer;
-  padding: 40px 0;
+  transition: 0.3s;
 }
 
 .nav_icon:hover {
   background-color: #fff;
-  transition: 0.3s;
-  height: 25px;
+  height: 112px;
 }
 
 .footer {
