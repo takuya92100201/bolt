@@ -289,10 +289,6 @@ main {
     margin-top: 80px;
   }
   
-  .article_content a:nth-last-child(-n+2) {
-    margin-top: 0;
-  }
-  
   .article_content_img {
     display: block;
     margin: 0 auto;
